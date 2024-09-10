@@ -1,7 +1,7 @@
 :root {
-	color1: #d8575d;
-	color2: #2255B4;
-	color3: #A1CDE0
+	color_primary: #d8575d;
+	color-secondary: #2255B4;
+	color3: #A1CDE0;
 }
 
 h1 {
@@ -11,9 +11,38 @@ h1 {
 }
 
 h2 {
-	font-weight: 500;
+	font-weight: 600 !important;
+}
+
+h3 {}
+
+h4 {}
+
+h5 {}
+
+h6 {}
+
+p {
+	font-weight: 400;
 }
 
 body {
-	font-family: "poppins", sans-serif;
+	font-family: "poppins", sans-serif !important;
+}
+
+.centered-flex {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.nav-bar {
+	background: var(color1);
+}
+
+.hero {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
