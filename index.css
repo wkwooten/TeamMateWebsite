@@ -46,3 +46,8 @@ body {
 	justify-content: center;
 	align-items: center;
 }
+
+.about-section {
+	display: grid;
+	margin: 5%;
+}
