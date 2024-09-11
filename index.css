@@ -1,17 +1,78 @@
 :root {
-	color_primary: #d8575d;
-	color-secondary: #2255B4;
-	color3: #A1CDE0;
+	--color_primary: #d8575d;
+	--color-secondary: #2255B4;
+	--color3: #A1CDE0;
+	--color4: white;
+	--color5: #262626;
+}
+
+a {
+	color: var(--color4) !important;
+}
+
+a:link {}
+
+a:visited {}
+
+a:focus {}
+
+a:hover {}
+
+a:active {}
+
+button {
+	display: inline-flex;
+	background: var(--color_primary);
+	color: var(--color4);
+	border: 2px #262626 solid;
+	padding: 0.625rem 1.25rem;
+	border-radius: 1.5625rem;
+	background: linear-gradient(180deg, #D8575D 68.18%, #C7545A 100%);
+}
+
+.page-wrapper {
+	margin: 5%;
+	/* border: 10px #d8575d solid;
+	border-style: double; */
+}
+
+.nav-bar {
+	display: flex;
+	background: var(--color_primary);
+	color: white;
+	font-size: 20px;
+	justify-content: space-around !important;
+	padding: 10px 5%;
+	z-index: 1;
+	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+	margin-block: 40px;
+}
+
+.nav-bar text {
+	color: var(--color4);
+}
+
+.nav-links {
+	display: flex;
+	justify-content: center;
+	gap: 50px;
+
+}
+
+.nav-links h3 {
+	text-decoration: none;
+	color: var(--color4);
 }
 
 h1 {
 	font-family: "ringold-clarendon", sans-serif;
-	font-weight: 400;
+	font-weight: 800;
 	font-style: normal;
 }
 
 h2 {
 	font-weight: 600 !important;
+	font-size: 800;
 }
 
 h3 {}
@@ -26,8 +87,14 @@ p {
 	font-weight: 400;
 }
 
-body {
-	font-family: "poppins", sans-serif !important;
+.brand-colors {
+	background-color: var(--color_primary);
+}
+
+.logo {
+	font-family: "ringold-clarendon", sans-serif;
+	font-weight: 900;
+	color: var(--color4);
 }
 
 .centered-flex {
@@ -37,17 +104,44 @@ body {
 	flex-direction: column;
 }
 
-.nav-bar {
-	background: var(color1);
+
+
+.hero_full {
+	display: flex;
+	height: 100vh;
+	align-items: center;
+	justify-content: center;
 }
 
 .hero {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	width: 100%;
+	padding: 3rem;
+	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+	background: var(--color4);
+	border-block: solid 20px var(--color_primary);
+}
+
+.hero h1 {
+	color: var(--color5);
 }
 
 .about-section {
 	display: grid;
 	margin: 5%;
+	padding: 5% 10%;
+	border-block: 2px solid var(--color-secondary);
+}
+
+.playbook {
+	display: block;
+	gap: 5%;
+}
+
+.playbook-content {
+	display: flex;
+	justify-content: center;
+	gap: 5%;
 }
