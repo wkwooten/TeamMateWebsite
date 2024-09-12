@@ -1,4 +1,2 @@
 # TeamMateWebsite
- Website for TeamMate project
-Please no steal
-thank u
+This is the frontend code for TeamMate, a dating app for sports fans.
