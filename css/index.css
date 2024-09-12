@@ -14,7 +14,9 @@ body {
 	font-family: "Poppins", Arial, Helvetica, sans-serif;
 }
 
-a:link {}
+a:link {
+	color: white !important;
+}
 
 a:visited {}
 
@@ -150,10 +152,14 @@ p {
 	color: var(--color5);
 }
 
+
 .hero_img {
 	/* width: 95%; */
 	border: var(--color_primary) solid 10px;
 	border-style: double;
+	margin-left: auto;
+	margin-right: auto;
+	align-items: center;
 }
 
 .about-section {
@@ -176,4 +182,9 @@ p {
 
 footer {
 	background: var(--color_primary);
+	color: white;
+}
+
+footer a {
+	color: white;
 }
