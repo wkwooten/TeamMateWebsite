@@ -6,9 +6,9 @@
 	--color5: #262626;
 }
 
-a {
+/* a {
 	color: var(--color4) !important;
-}
+} */
 
 a:link {}
 
@@ -36,12 +36,17 @@ button {
 	border-style: double; */
 }
 
+.section-style {
+	padding-inline: 50px;
+}
+
 .nav-bar {
 	display: flex;
 	background: var(--color_primary);
 	color: white;
 	font-size: 20px;
 	justify-content: space-around !important;
+	align-items: center;
 	padding: 10px 5%;
 	z-index: 1;
 	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
@@ -72,7 +77,6 @@ h1 {
 
 h2 {
 	font-weight: 600 !important;
-	font-size: 800;
 }
 
 h3 {}
@@ -108,15 +112,16 @@ p {
 
 .hero_full {
 	display: flex;
-	height: 100vh;
+	/* height: 100vh; */
 	align-items: center;
 	justify-content: center;
 }
 
 .hero {
 	display: flex;
-	justify-content: center;
+	flex-direction: column;
 	align-items: center;
+	justify-content: center;
 	width: 100%;
 	padding: 3rem;
 	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
@@ -124,8 +129,33 @@ p {
 	border-block: solid 20px var(--color_primary);
 }
 
+.hero-button {
+	color: var(--color-secondary);
+}
+
 .hero h1 {
 	color: var(--color5);
+}
+
+.hero img {
+	/* width: 95%; */
+	height: auto;
+	border: var(--color_primary) solid 10px;
+	border-style: double;
+}
+
+.account-links {
+	display: flex;
+	flex-flow: row;
+	justify-self: center;
+	justify-content: center;
+}
+
+.account-links button {
+	height: 90px;
+	border-width: 9.03px, 0px, 9.03px, 0px;
+	border-style: solid;
+	border-color: #2255B4;
 }
 
 .about-section {
@@ -144,4 +174,14 @@ p {
 	display: flex;
 	justify-content: center;
 	gap: 5%;
+}
+
+.card-layout {
+	display: grid;
+	grid-template-rows: ;
+}
+
+footer {
+	background: var(--color_primary);
+	align-items: center;
 }

@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>TeamMate: Don't Play Alone. </title>
-		<link rel="stylesheet" href="index.css">
+		<link rel="stylesheet" href="css\index.css">
+		<link rel="stylesheet" href="css\bootsrap.scss">
 		<link rel="stylesheet" href="https://use.typekit.net/ovv0qto.css">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,62 +14,95 @@
   </head>
   <body>
 		<div class="page-wrapper">
-			<header>
-				<nav class="nav-bar">
-				<a href=""><h1>TeamMate</h1></a>
-				<div class="nav nav-links">
-					<a href=""> <h3>Our Mission</h3></a>
-					<a href=""> <h3>The Playbook</h3></a>
-					<a href=""> <h3>The Playbook</h3></a>
-				</div>
+			<header class="nav-bar">
+				<nav class="container">
+					<ul class="nav">
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="#">Active</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Link</a>
+						</li>
+						<a class="navbar-brand mb-0"><h1>TeamMate</h1></a>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Link</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link disabled" aria-disabled="true">Disabled</a>
+						</li>
+					</ul>
 				</nav>
 			</header>
-			<section class="hero_full">
-				<main class="hero my-5">
-					<div class="centered-flex">
-						<!-- <img src="logo.svg" alt="TeamMate Logo"> -->
-						<h1>Find your Team Mate.</h1>
-						<div class="container">
-							<a href="#" class="button-download"><button>Download</button></a>
-							<a href="#" class="button-register"><button>Register</button></a>
-						</div>
+			<section class="text-center hero_full container-fluid">
+				<div class="hero">
+					<h1>Have your jumbotron moment.</h1>
+					<img src="https://gloriamesa.com//wp-content/uploads/2010/11/spanish-hills-country-club-5.jpg" alt="couple at a baseball game">
+					<a>Download</a>
+					<div class="account-links">
+						<a href="" class="hero-button">Register</a>
+						<a href="" class="hero-button">Sign In</a>
 					</div>
-				</main>
-			</section>
-			<section class="about-section">
-			<p>
-					Finding someone to share mutual passions can be a real challenge in today’s dating scene. Sports creates such meaningful connections across the world, we thought we would create a safe space where individuals can foster relationships over these shared passions. Whether its connecting with other super fans of the same team or embracing cross-town rivals, Team Mate wants to connect you with others that bleed blue, red, orange, green, and purple.
-			</p>
-			<p>Connect, Chat, and if things go well, you can purchase tickets to a local event for a memorable first date.
-				Sporting Events can represent a safe public space where you can show your true colors for the team you love and in doing so maybe find your Team Mate for life!</p>
-			<p>
-				Sporting Events can represent a safe public space where you can show your true colors for the team you love and in doing so maybe find your Team Mate for life!</p>
-			</section>
-			<section class="playbook">
-				<h2>The Playbook</h2>
-				<div class="row playbook-content">
-					<div class="card" style="width: 18rem;">
-						<div class="card-body">
-							<h5 class="card-title">Play with Integrity</h5>
-							<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-							<a href="#" class="btn btn-primary">Go somewhere</a>
-						</div>
-					</div>
-					<div class="card" style="width: 18rem;">
-						<div class="card-body">
-							<h5 class="card-title">Stay in Defense Mode </h5>
-							<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-							<a href="#" class="btn btn-primary">Go somewhere</a>
-						</div>
-					</div>
-					<div class="card" style="width: 18rem;">
-						<div class="card-body">
-							<h5 class="card-title">Play with Integrity</h5>
-							<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-							<a href="#" class="btn btn-primary">Go somewhere</a>
-						</div>
 				</div>
 			</section>
+			<section class="container-lg section-style">
+				<h1>Find Your TeamMate</h1>
+				<p>Finding someone who share’s mutual passions can be a real challenge in today’s dating scene.</p>
+				<p>
+					Sports can create  meaningful connections across the globe, so we thought we would create a safe space where individuals can foster relationships over these shared passions. Whether its connecting with other super fans of the same team or embracing cross-town rivals, Team Mate wants to connect you with others that bleed blue, red, orange, green, and purple. </p>
+				<p>Connect, Chat, and if things go well, you can purchase tickets to a local event for a memorable first date.</p>
+				<p>Sporting Events can represent a safe public space where you can show your true colors for the team you love and in doing so maybe find your Team Mate for life! </p>
+			</section>
+			<section class="container-xl section-style">
+				<h1>The Playbook</h1>
+				<p>We believe in a safe, inclusive, and equitable environment where everyone can play safe. We hope you can keep up with the playbook.</p>
+				<div class="flex-column">
+					<div class="card">
+						<div class="card-body">
+							<h3 class="card-title">Play with Integrity</h3>
+							<svg></svg>
+							<p class="card-text">Keep your profile true to who you are—accurate photos, age, and bio. Authenticity wins.</p>
+						</div>
+					</div>
+					<div class="card card-layout">
+						<div class="card-body">
+							<h3 class="card-title">Play with Integrity</h3>
+							<svg></svg>
+							<p class="card-text">Keep your profile true to who you are—accurate photos, age, and bio. Authenticity wins.</p>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-body">
+							<h3 class="card-title">Play with Integrity</h3>
+							<svg></svg>
+							<p class="card-text">Keep your profile true to who you are—accurate photos, age, and bio. Authenticity wins.</p>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-body">
+							<h3 class="card-title">Play with Integrity</h3>
+							<svg></svg>
+							<p class="card-text">Keep your profile true to who you are—accurate photos, age, and bio. Authenticity wins.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<footer class="container-fluid align-content-center">
+				<img src="images\logo.svg" alt="">
+				<ul class="nav justify-content-end">
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="#">Active</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Link</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Link</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link disabled" aria-disabled="true">Disabled</a>
+					</li>
+				</ul>
+			</footer>
 		</div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
