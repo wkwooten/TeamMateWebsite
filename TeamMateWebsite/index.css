@@ -180,7 +180,7 @@ footer {
 
 
   body {
-	font-family: 'Arial', sans-serif;
+
 	background: linear-gradient(to right, #e66465, #9198e5);
 	margin: 0;
 	padding: 0;
@@ -384,3 +384,125 @@ footer {
 
 
 
+
+
+
+/* General reset */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+  }
+  
+  body {
+	
+
+	background-size: cover;
+	background-color: #d8575d; 
+	color: #333;
+	line-height: 1.6;
+  }
+  
+  
+  .rulebook-container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 20px;
+  }
+  
+  
+  .rulebook-header {
+	text-align: center;
+	background: #d8575d(0, 95, 115, 0.85);
+	padding: 20px;
+	border-radius: 8px;
+	color: white;
+	backdrop-filter: blur(8px);
+	box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
+  }
+  
+  .rulebook-header h1 {
+	font-size: 2.5rem;
+	margin-bottom: 10px;
+	letter-spacing: 1.5px;
+	text-transform: uppercase;
+  }
+  
+  .rulebook-header p {
+	font-size: 1.2rem;
+  }
+  
+
+  .rulebook-content {
+	margin-top: 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	align-items: center; 
+  }
+  
+  .rule {
+	background: rgba(0, 0, 0, 0.3); 
+	padding: 20px;
+	border-radius: 50% / 100%; 
+	width: 380px;
+	height: 180px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.3);
+	backdrop-filter: blur(12px);
+	border: 2px solid rgba(255, 255, 255, 0.2);
+	transition: all 0.3s ease-in-out;
+	text-align: center;
+	color: #fff; 
+  }
+  
+  .rule:hover {
+	transform: scale(1.05);
+	border: 2px solid rgba(255, 255, 255, 0.6);
+  }
+  
+  .rule h2 {
+	font-size: 1.6rem;
+	color: #ffc107; 
+	margin-bottom: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+  }
+  
+  .rule p {
+	font-size: 1rem;
+	color: #e0e0e0; 
+	max-width: 280px;
+  }
+  
+  /* Media Queries for responsiveness */
+  @media (max-width: 768px) {
+	.rulebook-header h1 {
+	  font-size: 2rem;
+	}
+  
+	.rulebook-content {
+	  gap: 15px;
+	}
+  
+	.rule {
+	  width: 300px;
+	  height: 140px;
+	}
+  
+	.rule h2 {
+	  font-size: 1.4rem;
+	}
+  
+	.rule p {
+	  font-size: 0.9rem;
+	}
+  }
+  
+  
