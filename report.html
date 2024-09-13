@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>TeamMate: Don't Play Alone. </title>
+            <link rel="stylesheet" href="index.css">
+            <link rel="stylesheet" href="https://use.typekit.net/ovv0qto.css">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+      </head>
+
+
+
+
+    <div class="page-wrapper">
+        <header>
+            <nav class="nav-bar">
+            <a href="index.html"><h1>TeamMate</h1></a>
+            <div class="nav nav-links">
+                <a href=""> <h3>Our Mission</h3></a>
+                <a href=""> <h3>The Playbook</h3></a>
+                <a href=""> <h3>The Playbook</h3></a>
+                <a href="about.html"><h3> About US</h3></a>
+                <a href="Meettheteam.html"><h3>Meet The Team</h3></a>
+                <a href="report.html" ><h3> Report a Player </h3></a>
+
+            </div>
+            </nav>
+
+
+
+
+            <!DOCTYPE html>
+            <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Report a Player</title>
+                <link rel="stylesheet" href="styles.css">
+            </head>
+            <body>
+            
+                <div class="container">
+                    <h2>Report a Player</h2>
+            
+                    <!-- Progress Bar -->
+                    <div class="progress-bar">
+                        <div class="progress-step active">Reason</div>
+                        <div class="progress-step">Details</div>
+                        <div class="progress-step">Submit</div>
+                    </div>
+            
+                    <!-- Step 1: Reason -->
+                    <div id="step-1" class="step">
+                        <div class="input-group">
+                            <label for="reason">Reason for Reporting:</label>
+                            <select id="reason">
+                                <option value="message">Something they messaged me</option>
+                                <option value="off-app">Something that happened off the app or in person</option>
+                                <option value="profile">Something else on their profile</option>
+                            </select>
+                        </div>
+            
+                        <div class="button-group">
+                            <button onclick="goToStep(2)">Next</button>
+                        </div>
+                    </div>
+            
+                    <!-- Step 2: Details -->
+                    <div id="step-2" class="step" style="display: none;">
+                        <div class="input-group">
+                            <label for="details">Please provide details:</label>
+                            <textarea id="details" placeholder="Type details here..."></textarea>
+                        </div>
+            
+                        <div class="input-group">
+                            <label for="screenshot">Screenshot Upload (optional):</label>
+                            <input type="file" id="screenshot">
+                        </div>
+            
+                        <div class="button-group">
+                            <button onclick="goToStep(1)">Back</button>
+                            <button onclick="goToStep(3)">Next</button>
+                        </div>
+                    </div>
+            
+                    <!-- Step 3: Submit -->
+                    <div id="step-3" class="step" style="display: none;">
+                        <div class="success-message">
+                            <h3>Are you sure you want to submit this report?</h3>
+                            <p>We will not tell the player you reported them.</p>
+                        </div>
+            
+                        <div class="button-group">
+                            <button onclick="submitReport()">Confirm</button>
+                            <button class="cancel-btn" onclick="goToStep(2)">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+            
+                <script>
+                    function goToStep(step) {
+                       
+                        document.querySelectorAll('.step').forEach(function(stepDiv) {
+                            stepDiv.style.display = 'none';
+                        });
+            
+                        
+                        document.getElementById('step-' + step).style.display = 'block';
+            
+                        // progress bar
+                        document.querySelectorAll('.progress-step').forEach(function(stepDiv, index) {
+                            if (index < step) {
+                                stepDiv.classList.add('active');
+                            } else {
+                                stepDiv.classList.remove('active');
+                            }
+                        });
+                    }
+            
+                    function submitReport() {
+                        alert('Your report has been submitted successfully!');
+                        window.location.href = '/'; 
+                    }
+                </script>
+            
+            </body>
+            </html>
+            
+
+
+
+
+
+
+            <footer>
+	
+                <div class="footer-legal">
+                  <a href="#terms">Terms</a>
+                  <a href="#privacy">Privacy</a>
+                  <a href="#help">Help</a>
+                  <a href="#contact">Contact Us</a>
+            
+
+            
+                </div>
+                <p class="footer-branding">© 2024 Teammate</p>
+              </footer>
+              
+  
